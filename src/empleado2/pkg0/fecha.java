@@ -44,7 +44,16 @@ public class fecha {
         this.mes = mes;
         this.año = año;
     }
-   
+    public fecha() {
+        this.dia = 0;
+        this.mes = 0;
+        this.año = 0;
+    }
+
+    @Override
+    public String toString() {
+        return "fecha{" + "dia=" + dia + ", mes=" + mes + ", a\u00f1o=" + año + '}';
+    }
 
     
 }

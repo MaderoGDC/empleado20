@@ -12,19 +12,27 @@ private String apellido;
 private char genero;
 private String imagen;
 private double salario;
-private fecha nacimiento;
-private fecha ingreso; 
+private fecha fenacimiento;
+private fecha feingreso; 
 
-    public Empleado20(String nombre, String apellido, char genero, String imagen, double salario, fecha nacimiento, fecha ingreso) {
+    public Empleado20(String nombre, String apellido, char genero, String imagen, double salario, fecha fenacimiento, fecha feingreso) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.genero = genero;
         this.imagen = imagen;
         this.salario = salario;
-        this.nacimiento = nacimiento;
-        this.ingreso = ingreso;
+        this.fenacimiento = fenacimiento;
+        this.feingreso = feingreso;
     }
-
+    public Empleado20(){
+        this.nombre = "";
+        this.apellido = "";
+        this.genero = 'n';
+        this.imagen = "";
+        this.salario = 0;
+        this.fenacimiento = new fecha();
+        this.feingreso = new fecha();
+    }
 
 
     public String getNombre() {
@@ -47,12 +55,12 @@ private fecha ingreso;
         return salario;
     }
 
-    public fecha getNacimiento() {
-        return nacimiento;
+    public fecha getfenacimiento() {
+        return fenacimiento;
     }
 
-    public fecha getIngreso() {
-        return ingreso;
+    public fecha getfeingreso() {
+        return feingreso;
     }
 
     public void setNombre(String nombre) {
@@ -75,12 +83,17 @@ private fecha ingreso;
         this.salario = salario;
     }
 
-    public void setNacimiento(fecha nacimiento) {
-        this.nacimiento = nacimiento;
+    public void setfenacimiento(fecha fenacimiento) {
+        this.fenacimiento = fenacimiento;
     }
 
-    public void setIngreso(fecha ingreso) {
-        this.ingreso = ingreso;
+    public void setfeingreso(fecha feingreso) {
+        this.feingreso = feingreso;
+    }
+
+    @Override
+    public String toString() {
+        return "Empleado20{" + "nombre=" + nombre + ", apellido=" + apellido + ", genero=" + genero + ", imagen=" + imagen + ", salario=" + salario + ", fenacimiento=" + fenacimiento + ", feingreso=" + feingreso + '}';
     }
 
 

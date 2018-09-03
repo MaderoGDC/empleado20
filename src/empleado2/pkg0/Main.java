@@ -5,16 +5,22 @@
  */
 package empleado2.pkg0;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Estudiante
  */
 public class Main {
-    fecha fn1 = new fecha(16,8,2000);
-    fecha fi1 = new fecha (3,9,2018);
-    Empleado20 e1 = new Empleado20("juan","Gomez",'m',"foto",2000,fn1,fi1);
     
-
+    public static void main(String [] args){
+           
+        ArrayList <Empleado20> empleados = new ArrayList <Empleado20> ();
+        empleados.add(new Empleado20("Juan","Gomez",'m',"foto",300,new fecha(2,2,2018),new fecha(3,9,2018)));
+        System.out.println(empleados.get(0));
    
    
+    }
+    
+    
 }
